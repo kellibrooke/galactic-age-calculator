@@ -1,8 +1,17 @@
 body {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
+h1 {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 35px;
+  margin: 50px 0px;
+}
 #results {
   display:none;
+  background-color: navy;
+  margin-top:50px;
+  padding:20px;
 }
