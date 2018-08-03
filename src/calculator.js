@@ -12,5 +12,11 @@ export class Calculator {
     this.printableToday = this.today.toDateString();
   }
 
+  convertToSeconds(date) {
+    const seconds = (date.getTime())/1000;
+    return seconds;
+  }
+
+  
 
 }
