@@ -1,7 +1,10 @@
 export class Calculator {
   constructor(birthDay, birthMonth, birthYear) {
-    this.birthday = new Date();
-    this.birthday.setFullYear(birthYear, birthMonth, birthDay);
+    this.birthDay = birthDay;
+    this.birthMonth = birthMonth;
+    this.birthYear = birthYear;
+    this.birthDate = new Date();
+    this.birthDate.setFullYear(birthYear, birthMonth, birthDay);
   }
 
 
