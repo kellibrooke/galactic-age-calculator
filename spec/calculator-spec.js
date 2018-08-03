@@ -80,10 +80,10 @@ describe('Calculator', function() {
     expect(jupiterYearsLeft).toEqual(4);
   });
 
-  it('should return true if the person has exceeded their life expectancy', function() {
+  it('should return yes if the person has exceeded their life expectancy', function() {
     var newCalculator = new Calculator(25, 7, 1910);
     var exceeded = newCalculator.shouldBeDead();
-    expect(exceeded).toEqual(true);
+    expect(exceeded).toEqual("yes");
   });
 
 });

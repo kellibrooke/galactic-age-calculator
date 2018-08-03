@@ -57,11 +57,13 @@ export class Calculator {
   }
 
   shouldBeDead() {
-    const yearsLeft = this.lifeExpectancy - this.findEarthAge()
+    let yearsLeft = this.lifeExpectancy - this.findEarthAge()
     if (yearsLeft < 0) {
-      return true;
+      return "yes";
     } else if (yearsLeft > 0) {
-      return false;
+      return "no";
+    } else if (yearsLeft === 0) {
+      return "will die this year";
     }
   }
 
