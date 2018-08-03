@@ -10,6 +10,7 @@ export class Calculator {
     this.today = new Date();
     this.today.setHours(0, 0, 0);
     this.printableToday = this.today.toDateString();
+    this.lifeExpectancy = 79;
   }
 
   convertToSeconds(date) {
@@ -47,5 +48,35 @@ export class Calculator {
   findJupiterAge() {
     const jupiterAge = Math.floor(this.findSecondsBetweenDates()/374016960);
     return jupiterAge;
+  }
+
+  findEarthYearsLeft() {
+    const age = this.findEarthAge();
+    const yearsLeft = this.lifeExpectancy - age;
+    return yearsLeft;
+  }
+
+  findMercuryYearsLeft() {
+    const earthYearsLeft = this.findEarthYearsLeft();
+    const mercuryYearsLeft = Math.floor(earthYearsLeft/.24);
+    return mercuryYearsLeft;
+  }
+
+  findVenusYearsLeft() {
+    const earthYearsLeft = this.findEarthYearsLeft();
+    const venusYearsLeft = Math.floor(earthYearsLeft/.62);
+    return venusYearsLeft;
+  }
+
+  findMarsYearsLeft() {
+    const earthYearsLeft = this.findEarthYearsLeft();
+    const marsYearsLeft = Math.floor(earthYearsLeft/1.88);
+    return marsYearsLeft;
+  }
+
+  findJupiterYearsLeft() {
+    const earthYearsLeft = this.findEarthYearsLeft();
+    const jupiterYearsLeft = Math.floor(earthYearsLeft/11.86);
+    return jupiterYearsLeft;
   }
 }

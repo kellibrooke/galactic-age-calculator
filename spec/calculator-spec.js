@@ -43,11 +43,41 @@ describe('Calculator', function() {
     var marsAge = newCalculator.findMarsAge();
     expect(marsAge).toEqual(16);
   });
-  
+
   it('should find the persons jupiter age', function() {
     var newCalculator = new Calculator(25, 7, 1987);
     var jupiterAge = newCalculator.findJupiterAge();
     expect(jupiterAge).toEqual(2);
+  });
+
+  it('should find the persons earth years left', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var earthYearsLeft = newCalculator.findEarthYearsLeft();
+    expect(earthYearsLeft).toEqual(49);
+  });
+
+  it('should find the persons mercury years left', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var mercuryYearsLeft = newCalculator.findMercuryYearsLeft();
+    expect(mercuryYearsLeft).toEqual(204);
+  });
+
+  it('should find the persons venus years left', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var venusYearsLeft = newCalculator.findVenusYearsLeft();
+    expect(venusYearsLeft).toEqual(79);
+  });
+
+  it('should find the persons mars years left', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var marsYearsLeft = newCalculator.findMarsYearsLeft();
+    expect(marsYearsLeft).toEqual(26);
+  });
+
+  it('should find the persons jupiter years left', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var jupiterYearsLeft = newCalculator.findJupiterYearsLeft();
+    expect(jupiterYearsLeft).toEqual(4);
   });
 
 });
