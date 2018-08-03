@@ -24,6 +24,9 @@ export class Calculator {
     return difference;
   }
 
-
+  findEarthAge() {
+    const earthAge = Math.floor(this.findSecondsBetweenDates()/31536000);
+    return earthAge;
+  }
 
 }

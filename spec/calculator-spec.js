@@ -20,4 +20,10 @@ describe('Calculator', function() {
     expect(difference).toEqual(976406400);
   });
 
+  it('should find the persons earth age', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var earthAge = newCalculator.findEarthAge();
+    expect(earthAge).toEqual(30);
+  });
+
 });
