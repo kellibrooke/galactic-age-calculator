@@ -17,6 +17,13 @@ export class Calculator {
     return seconds;
   }
 
+  findSecondsBetweenDates() {
+    const birthDateSeconds = this.convertToSeconds(this.birthDate);
+    const todaySeconds = this.convertToSeconds(this.today);
+    const difference = todaySeconds - birthDateSeconds;
+    return difference;
+  }
+
 
 
 }
