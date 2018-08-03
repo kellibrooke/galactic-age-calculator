@@ -52,8 +52,17 @@ export class Calculator {
 
   findEarthYearsLeft() {
     const age = this.findEarthAge();
-    const yearsLeft = this.lifeExpectancy - age;
+    const yearsLeft = Math.abs(this.lifeExpectancy - age);
     return yearsLeft;
+  }
+
+  shouldBeDead() {
+    const yearsLeft = this.lifeExpectancy - this.findEarthAge()
+    if (yearsLeft < 0) {
+      return true;
+    } else if (yearsLeft > 0) {
+      return false;
+    }
   }
 
   findMercuryYearsLeft() {
