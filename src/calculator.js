@@ -13,10 +13,10 @@ export class Calculator {
   }
 
   convertToSeconds(date) {
-    const seconds = (date.getTime())/1000;
+    const seconds = Math.floor((date.getTime())/1000);
     return seconds;
   }
 
-  
+
 
 }
