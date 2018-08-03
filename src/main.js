@@ -5,6 +5,7 @@ import './styles.css';
 
 $(document).ready(function() {
   $("#submit").click(function(){
-    $("#result").text(($("#bday").val()).toString());
-  })
+    const birthDay = $("#birthDay").val();
+    $("#result").text(birthDay);
+  });
 });

@@ -8,36 +8,48 @@
     <h1>Galactic Age Calculator</h1>
 
     <form>
-      <div class="form-group">
-        <label for="birthDay">Enter your birth day</label>
-        <input type="text" id="birthDay" maxlength="2" size="2">
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <label for="birthDay">Enter your birth day</label>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" id="birthDay" maxlength="2" size="2">
+        </div>
       </div>
-      <div class="form-group">
-        <label for="birthMonth">Select your birth month</label>
-        <select class="form-control-sm" id="birthMonth">
-          <option value="0">January</option>
-          <option value="1">February</option>
-          <option value="2">March</option>
-          <option value="3">April</option>
-          <option value="4">May</option>
-          <option value="5">June</option>
-          <option value="6">July</option>
-          <option value="7">August</option>
-          <option value="8">September</option>
-          <option value="9">October</option>
-          <option value="10">November</option>
-          <option value="11">December</option>
-        </select>
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <label for="birthMonth">Select your birth month</label>
+        </div>
+        <div class="col-sm-8">
+          <select class="form-control-sm" id="birthMonth">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+          </select>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="birthMonth">Enter your birth year</label>
-        <input type="text" id="birthYear" maxlength="4" size="4">
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <label for="birthMonth">Enter your birth year</label>
+        </div>
+        <div class="col-sm-8">
+          <input type="text" id="birthYear" maxlength="4" size="4">
+        </div>
       </div>
-    <button id="button">Submit</button>
+    <button type="button" id="submit" class="btn btn-success">Submit</button>
   </form>
 
   <div id="result">
-
+    Result area
   </div>
   </div>
 </body>
