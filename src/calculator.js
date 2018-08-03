@@ -29,4 +29,23 @@ export class Calculator {
     return earthAge;
   }
 
+  findMercuryAge() {
+    const mercuryAge = Math.floor(this.findSecondsBetweenDates()/7568640);
+    return mercuryAge;
+  }
+
+  findVenusAge() {
+    const venusAge = Math.floor(this.findSecondsBetweenDates()/19552320);
+    return venusAge;
+  }
+
+  findMarsAge() {
+    const marsAge = Math.floor(this.findSecondsBetweenDates()/59287680);
+    return marsAge;
+  }
+
+  findJupiterAge() {
+    const jupiterAge = Math.floor(this.findSecondsBetweenDates()/374016960);
+    return jupiterAge;
+  }
 }

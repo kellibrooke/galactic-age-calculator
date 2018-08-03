@@ -26,4 +26,28 @@ describe('Calculator', function() {
     expect(earthAge).toEqual(30);
   });
 
+  it('should find the persons mercury age', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var mercuryAge = newCalculator.findMercuryAge();
+    expect(mercuryAge).toEqual(129);
+  });
+
+  it('should find the persons venus age', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var venusAge = newCalculator.findVenusAge();
+    expect(venusAge).toEqual(49);
+  });
+
+  it('should find the persons mars age', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var marsAge = newCalculator.findMarsAge();
+    expect(marsAge).toEqual(16);
+  });
+  
+  it('should find the persons jupiter age', function() {
+    var newCalculator = new Calculator(25, 7, 1987);
+    var jupiterAge = newCalculator.findJupiterAge();
+    expect(jupiterAge).toEqual(2);
+  });
+
 });
