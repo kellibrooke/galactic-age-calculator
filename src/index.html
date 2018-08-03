@@ -7,20 +7,20 @@
 <body>
   <div class="container">
     <h1>Galactic Age Calculator</h1>
-
+    <div id="calculator-area">
       <div class="form-group row">
-        <div class="col-sm-4">
-          <label for="birthDay">Enter your birth day</label>
+        <div class="col-sm-6">
+          <label for="birthDay">Enter Your Birth Day</label>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-6">
           <input type="text" id="birthDay" maxlength="2" size="2">
         </div>
       </div>
       <div class="form-group row">
-        <div class="col-sm-4">
-          <label for="birthMonth">Select your birth month</label>
+        <div class="col-sm-6">
+          <label for="birthMonth">Select Your Birth Month</label>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-6">
           <select class="form-control-sm" id="birthMonth">
             <option value="0">January</option>
             <option value="1">February</option>
@@ -38,30 +38,66 @@
         </div>
       </div>
       <div class="form-group row">
-        <div class="col-sm-4">
-          <label for="birthMonth">Enter your birth year</label>
+        <div class="col-sm-6">
+          <label for="birthMonth">Enter Your Birth Year</label>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-6">
           <input type="text" id="birthYear" maxlength="4" size="4">
         </div>
       </div>
-    <button type="button" id="submit" class="btn btn-success">Submit</button>
+    <button type="button" id="submit" class="btn btn-danger">Submit</button>
+  </div>
 
   <div id="results">
     <h3>Based On Our Calculations...</h3>
-    <p>Your Age on Earth: <span id="earth-age"></span></p>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>Your Age on Earth: </p>
+      </div>
+      <div class="col-sm-6">
+        <span id="earth-age"></span>
+      </div>
+    </div>
     <p><span id="earth-years-left"></span></p>
     <br>
-    <p>Your Age on Mercury: <span id="mercury-age"></span></p>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>Your Age on Mercury: </p>
+      </div>
+      <div class="col-sm-6">
+        <span id="mercury-age"></span>
+      </div>
+    </div>
     <p><span id="mercury-years-left"></span></p>
     <br>
-    <p>Your Age on Venus: <span id="venus-age"></span></p>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>Your Age on Venus: </p>
+      </div>
+      <div class="col-sm-6">
+        <span id="venus-age"></span>
+      </div>
+    </div>
     <p><span id="venus-years-left"></span></p>
     <br>
-    <p>You Age On Mars: <span id="mars-age"></span></p>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>You Age On Mars: </p>
+      </div>
+      <div class="col-sm-6">
+        <span id="mars-age"></span>
+      </div>
+    </div>
     <p><span id="mars-years-left"></span></p>
     <br>
-    <p>Your Age On Jupiter: <span id="jupiter-age"></span></p>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>Your Age On Jupiter: </p>
+      </div>
+      <div class="col-sm-6">
+        <span id="jupiter-age"></span>
+      </div>
+    </div>
     <p><span id="jupiter-years-left"></span></p>
   </div>
   </div>

@@ -1,6 +1,8 @@
 body {
-  background-color: black;
-  color: white;
+  background-image: url("https://storywarren.com/wp-content/uploads/2016/09/space-1.jpg");
+  color: oldlace;
+  font-family: monospace;
+  font-size:18px;
 }
 
 h1 {
@@ -9,9 +11,30 @@ h1 {
   font-size: 35px;
   margin: 50px 0px;
 }
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.btn-danger {
+  color:oldlace;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+}
 #results {
   display:none;
   background-color: navy;
   margin-top:50px;
   padding:20px;
+  border-radius: 5px;
+  border:1px dotted oldlace;
+}
+
+#calculator-area {
+  background-color:navy;
+  padding:20px;
+  border-radius: 5px;
+  border:1px dotted oldlace;
 }
